@@ -148,3 +148,6 @@ We use mock implementations of OfferLoader to simulate offer loading during test
 
 - **Error Handling Improvements:** We currently log errors in offer loading and refresh. With more time I could introduce retries or circuit breakers for failed loaders.
 - **Scalability:** The design is flexible for adding more offer loaders or handling larger lists of offers by leveraging more advanced coroutine patterns like Flow for streaming data rather than my cruder setup.
+- **MVC:** Use either Ktor or Spring Boot to build out rest APIs and receive calls that would invoke the service 
+- **CI/CD:** I would use github actions as a form of CI/CD pipeline before allowing pull-requests to be merged
+- **Containerisation:** It would be useful to use docker/k8s to have multiple running instances of this service which could delegate incoming calls to load balance/have some redundancy
