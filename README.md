@@ -16,7 +16,7 @@ generation.
 Key classes and features:
 
 - **`OfferConfigParser`:** Parses offers from multiple loaders (URL, File, etc.) concurrently and applies them to the
-  shopping cart.
+  shopping cart. For the sake of this class I have made an assumption that the offers are either loadable from a file or a rest URL in a standard format as seen in the offers-config.json
 - **`DefaultShoppingServiceImpl`:** Manages the cart and applies offers during checkout, with a periodic refresh of
   offers.
 - **Concurrency & Asynchronous Design:** Efficient use of Kotlin Coroutines to handle asynchronous offer loading and
