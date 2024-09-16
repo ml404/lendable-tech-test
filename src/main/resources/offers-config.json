@@ -1,0 +1,10 @@
+[
+  {
+    "type": "TwoForOneOffer",
+    "applicableTo": ["cornflakes", "pasta"]
+  },
+  {
+    "type": "PercentageDiscountOffer",
+    "discountPercentage": 10
+  }
+]
